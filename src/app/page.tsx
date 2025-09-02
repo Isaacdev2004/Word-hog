@@ -19,7 +19,7 @@ export default function Home() {
               <Link href="/analyze" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Upload</Link>
                              <Link href="/about" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</Link>
                <Link href="/faq" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">FAQ</Link>
-               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Privacy</a>
+               <Link href="/privacy" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Privacy</Link>
                <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Terms</a>
             </nav>
 
@@ -194,7 +194,7 @@ export default function Home() {
               <Link href="/analyze" className="text-gray-700 hover:text-gray-900 text-sm">Upload</Link>
                              <Link href="/about" className="text-gray-700 hover:text-gray-900 text-sm">About</Link>
                <Link href="/faq" className="text-gray-700 hover:text-gray-900 text-sm">FAQ</Link>
-               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">Privacy</a>
+               <Link href="/privacy" className="text-gray-700 hover:text-gray-900 text-sm">Privacy</Link>
                <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">Terms</a>
             </nav>
 
