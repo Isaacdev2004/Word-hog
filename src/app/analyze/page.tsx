@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react'
 import { Button } from '@/components/ui/button'
+import Link from 'next/link'
 
 export default function AnalyzePage() {
   const [file, setFile] = useState<File | null>(null)
@@ -58,15 +59,15 @@ export default function AnalyzePage() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Wordhog
-              </h1>
+              </Link>
             </div>
 
             {/* Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
-              <a href="/analyze" className="text-blue-600 font-medium px-3 py-2 text-sm border-b-2 border-blue-600">Upload</a>
+              <Link href="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</Link>
+              <Link href="/analyze" className="text-blue-600 font-medium px-3 py-2 text-sm border-b-2 border-blue-600">Upload</Link>
               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">FAQ</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Privacy</a>
@@ -198,15 +199,15 @@ export default function AnalyzePage() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Logo */}
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+              <Link href="/" className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
                 Wordhog
-              </h3>
+              </Link>
             </div>
 
             {/* Navigation */}
             <nav className="flex space-x-6 mb-4 md:mb-0">
-              <a href="/" className="text-gray-700 hover:text-gray-900 text-sm">Home</a>
-              <a href="/analyze" className="text-gray-700 hover:text-gray-900 text-sm">Upload</a>
+              <Link href="/" className="text-gray-700 hover:text-gray-900 text-sm">Home</Link>
+              <Link href="/analyze" className="text-gray-700 hover:text-gray-900 text-sm">Upload</Link>
               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">About</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">FAQ</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">Privacy</a>

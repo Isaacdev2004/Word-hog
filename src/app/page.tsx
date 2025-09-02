@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -9,13 +10,13 @@ export default function Home() {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-blue-800">Wordhog</h1>
+              <Link href="/" className="text-2xl font-bold text-blue-800">Wordhog</Link>
             </div>
 
             {/* Navigation */}
             <nav className="hidden md:flex space-x-8">
-              <a href="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</a>
-              <a href="/analyze" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Upload</a>
+              <Link href="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Home</Link>
+              <Link href="/analyze" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Upload</Link>
               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">About</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">FAQ</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 text-sm font-medium">Privacy</a>
@@ -43,14 +44,14 @@ export default function Home() {
             Upload your meeting transcripts and get instant insights into talk time, interruptions, filler words, and communication patterns.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="/analyze">
+            <Link href="/analyze">
               <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 text-lg">
                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
                 </svg>
                 Upload Transcript
               </Button>
-            </a>
+            </Link>
             <Button variant="outline" size="lg" className="border-blue-600 text-blue-600 hover:bg-blue-50 px-8 py-3 text-lg">
               Learn More
             </Button>
@@ -165,14 +166,14 @@ export default function Home() {
           <p className="text-xl text-white mb-8">
             Start getting insights from your meeting transcripts today. Upload your first file and see the magic happen.
           </p>
-          <a href="/analyze">
+          <Link href="/analyze">
             <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg">
               <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
               </svg>
               Get Started Now
             </Button>
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -182,13 +183,13 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Logo */}
             <div className="mb-4 md:mb-0">
-              <h3 className="text-xl font-bold text-blue-800">Wordhog</h3>
+              <Link href="/" className="text-xl font-bold text-blue-800">Wordhog</Link>
             </div>
 
             {/* Navigation */}
             <nav className="flex space-x-6 mb-4 md:mb-0">
-              <a href="/" className="text-gray-700 hover:text-gray-900 text-sm">Home</a>
-              <a href="/analyze" className="text-gray-700 hover:text-gray-900 text-sm">Upload</a>
+              <Link href="/" className="text-gray-700 hover:text-gray-900 text-sm">Home</Link>
+              <Link href="/analyze" className="text-gray-700 hover:text-gray-900 text-sm">Upload</Link>
               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">About</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">FAQ</a>
               <a href="#" className="text-gray-700 hover:text-gray-900 text-sm">Privacy</a>
