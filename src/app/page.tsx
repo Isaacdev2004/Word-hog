@@ -112,7 +112,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-3xl font-bold text-gray-800 mb-4">Why Choose Wordhog?</h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Unlock the power of data-driven communication insights to improve your team's performance.
+              Unlock the power of data-driven communication insights to improve your team&apos;s performance.
             </p>
           </div>
           
